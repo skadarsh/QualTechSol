@@ -1,0 +1,290 @@
+.page-title {
+    > * {
+        color: white;
+    }
+}
+.deviceSection img {
+    width: 200px;
+  }
+
+#IOS {
+ //   margin-top : 10em;
+}
+
+.row {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto; }
+    .row::before, .row::after {
+      content: ' ';
+      display: table; }
+    .row::after {
+      clear: both; }
+    .row.collapse > .column, .row.collapse > .columns {
+      padding-left: 0;
+      padding-right: 0; }
+    .row .row {
+      max-width: none;
+      margin-left: -0.625rem;
+      margin-right: -0.625rem;
+      max-width: none; }
+      @media screen and (min-width: 40em) {
+        .row .row {
+          margin-left: -0.9375rem;
+          margin-right: -0.9375rem; } }
+      .row .row.collapse {
+        margin-left: 0;
+        margin-right: 0; }
+    .row.expanded {
+      max-width: none; }
+      .row.expanded .row {
+        margin-left: auto;
+        margin-right: auto; }
+  
+.serviceGroup {
+    color: white;
+}
+
+/*!
+* Theme Name: Ninty-Nine
+* Framework Type: Foundation Css
+* Template by www.uigrid.com | Themes & Templates
+* Email: hello@uigrid.com 
+* License: http://www.uigrid.com/license/
+* Made with Love
+*/
+
+/*
+	Style Guide
+*/
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f5f5f5;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  section {
+    /* padding: 30px 0px; */
+    /* position: relative; */
+    /* overflow: hidden; */
+    /* border-top: 1px solid #ddd; */
+  }
+  
+  /*
+      Reusable styles
+  */
+  .colorWhite {
+    color: #ffffff;
+  }
+  
+  .colorBlack {
+    color: #333333;
+  }
+  
+  .backgroundColor {
+    background-color: #333333;
+  }
+  
+  .brandColor {
+    color: #f44336;
+  }
+  
+  .brandbackground {
+    background-color: #f44336;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #ffffff;
+    color: #333333;
+    font-weight: 600;
+    border: 1px solid #333333;
+    border-radius: 5px;
+  }
+  .btn:hover {
+    background-color: #f44336;
+    color: #ffffff;
+    border: 1px solid #b71c1c;
+  }
+  
+  /*
+      Layout Style Guide
+  */
+  .sticky-container {
+    background-color: #f44336;
+  }
+  
+  .top-bar {
+    background-color: #f44336;
+  }
+  
+  .topMenubar {
+    width: 100%;
+    height: auto;
+    background-color: red;
+  }
+  
+  /*
+      Main banner 
+  */
+  .mainBanner {
+    width: 100%;
+    height: 560px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(http://www.uigrid.com/demo/app_nintynine-foundation/img/heroImage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .mainBanner .bannerHeading {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .mainBanner .bannerHeading h1 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 0px;
+  }
+  .mainBanner .bannerHeading .appLink {
+    margin-left: 20px;
+    display: inline;
+  }
+  
+  /*
+      Android Section
+  */
+  .deviceSection img {
+    width: 200px;
+  }
+  
+  /*
+      Team Section
+  */
+  .teamMember {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    -webkit-box-shadow: 0px 5px 8px -4px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 5px 8px -4px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 5px 8px -4px rgba(0, 0, 0, 0.7);
+  }
+  .teamMember img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  /* 
+      Footer layout 
+  */
+  footer {
+    padding: 30px 0px;
+    position: relative;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  footer .appLink {
+    margin-left: 20px;
+    display: inline;
+  }
+  
+  .subFooter {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 5px 0px;
+  }
+  
+  /*
+      Media Quries
+  */
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 1.8em !important;
+    }
+  
+    section {
+      padding: 20px 15px;
+    }
+  
+  
+    .top-bar-right .menu li {
+      display: block;
+      width: 100%;
+      line-height: 30px;
+      border-bottom: 1px solid #b71c1c;
+    }
+  
+    .mainBanner {
+      width: 100%;
+      height: 450px;
+    }
+    .mainBanner .bannerHeading {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      color: #ffffff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0px 25px;
+    }
+    .mainBanner .bannerHeading h1 {
+      color: #fff;
+      font-weight: 500;
+      font-size: 2.5em;
+      text-align: center;
+      margin-top: 180px;
+      margin-bottom: 0px;
+    }
+    .mainBanner .bannerHeading .appLink {
+      margin-left: 10px;
+      display: inline;
+    }
+  
+    .teamMember {
+      margin-bottom: 30px;
+    }
+  
+    footer {
+      padding: 20px 10px;
+    }
+  
+    .subFooter {
+      padding: 10px 10px;
+    }
+  }
+  /* Mobile Media Query */
+  @media (max-width: 480px) {
+    .deviceSection img {
+      display: none;
+    }
+  }
+
+  .custom-navbar {
+    margin-bottom: 0;
+    background-color: brown !important;
+    padding: 20px 0;
+  }
+
+  .brandbackground {
+    background-color: #f44336;
+  }

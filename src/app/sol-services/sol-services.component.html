@@ -1,0 +1,118 @@
+<div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+  <div class="container">
+
+      <!-- NAVBAR HEADER -->
+      <div class="navbar-header">
+          <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" (click)="openMenu()">
+              <span class="icon icon-bar"></span>
+              <span class="icon icon-bar"></span>
+              <span class="icon icon-bar"></span>
+          </button>
+          <!-- lOGO -->
+          <a [routerLink]="['/']" class="navbar-brand">Saba</a>
+      </div>
+
+      <!-- MENU LINKS -->
+      <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a [routerLink]="['/']" class="smoothScroll">Home</a></li>
+              <li><a [routerLink]="['/about']" class="smoothScroll">About</a></li>
+              <li class="active"><a [routerLink]="['/services']" class="smoothScroll">Services</a></li>
+              <li><a [routerLink]="['/contact-us']" class="smoothScroll active" >Contact Us</a></li>
+              <li><a [routerLink]="['/help']" class="smoothScroll">help</a></li>
+              <!-- <li><a [routerLink]="['/login']" class="smoothScroll">Sign IN</a></li>
+              <li><a [routerLink]="['/register']" class="smoothScroll">Sign Up</a></li> -->
+          </ul>
+      </div>
+
+  </div>
+</div>
+
+<section class="video-step">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-12 col-sm-12 col-md-12 text-center">
+                <div class="page-title">
+                    <h1>Services</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<section id="IOS" style='padding-bottom: 4em;'>
+  <div class="deviceSection">
+    <div class="row">
+      <div class="small-12 medium-6 large-6 column text-center">
+          <img style='margin-top: 2em; width: 500px;' src="data:image/png;base64,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">
+      </div>
+      <div class="small-12 medium-6 large-6 column">
+        <h1 class="brandColor">Our Professional Services</h1>
+        <ul class='serviceGroup'>
+         <li> Requirement Gathering & Analysis</li> 
+         <li> Project Roadmap & Delivery model</li>
+         <li> Enterprise Application Architecture  </li>
+         <li> Programming/Coding best practices </li>
+         <li> Quality Assurance Testing </li> 
+         <li> Waterfall, Agile (Scrum), Client custom delivery models</li> 
+        </ul>
+        <div class="btn">Download WhitePaper! 
+          <!-- <i class="fa fa-android fa-1x"></i>  -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Android brandbackground" style='background-color: brown; padding-bottom: 4em;'>
+  <div class="deviceSection">
+    <div class="row">
+      <div class="small-12 medium-6 large-6 column text-center">
+        <img style='margin-top: 2em; width: 500px;'src="https://storage.needpix.com/rsynced_images/simulator-2313004_1280.jpg">
+      </div>
+      <div class="small-12 medium-6 large-6 column">
+        <h1 style='color:white;'>Core Competencies</h1>
+        <ul class='serviceGroup'>
+          <li> Application Design & Development </li>
+          <li> eCommerce Application Development </li>
+          <li> Application Enhancements </li>Application Enhancements 
+          <li> New Product Development</li> 
+          <li> Mobile Application</li>	
+          <li> Infrastructure & Application Migration  </li>	
+          <li> Database Design & Development  </li>
+          <li> Data Integration & Transformation </li>
+          <li> Automation</li>  
+          <li> Analytics/BI Reporting </li>
+          <li> Disaster Recovery</li> 
+          
+        </ul>
+        <div class="btn">Download WhitePaper! 
+          <!-- <i class="fa fa-android fa-1x"></i> -->
+          </div> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Android brandbackground " style='padding-bottom: 4em;'>
+  <div class="deviceSection">
+    <div class="row">
+      <div class="small-12 medium-6 large-6 column text-center">
+        <img style='width: 500px; margin-top: 2em;' src="https://cdn.pixabay.com/photo/2018/09/08/22/37/software-3663509_960_720.jpg">
+      </div>
+      <div class="small-12 medium-6 large-6 column">
+        <h1 class="brandColor">What We Do?</h1>
+        <p>
+            At SABA, we cover both Commercial and Support aspects of the Business.
+            Our core competencies lie in Programming, whether it is distributed component-based coding or Piecing together licensed software’s, SABA helps customers to choose from our vast stretch of Technology offerings to build ad-hoc functionalities and custom software Solutions for customers on-premise & cloud/hybrid distributed platforms.  
+            SABA’s custom software developers has built many multiple successful applications for local businesses, Business verticals such as, Transportation & Logistics, Banking, Telecom, Public & Private sectors, Business Ops, Procurement & Supply Chain Management disciplines.            
+        </p>
+        <div class="btn">Download WhitePaper! 
+          <!-- <i class="fa fa-android fa-1x"></i> -->
+          </div> 
+      </div>
+    </div>
+  </div>
+</section>
+
+

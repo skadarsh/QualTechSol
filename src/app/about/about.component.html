@@ -1,0 +1,97 @@
+
+
+
+<div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- NAVBAR HEADER -->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" (click)="openMenu()">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+            <!-- lOGO -->
+            <a [routerLink]="['/']" class="navbar-brand">Saba</a>
+        </div>
+
+        <!-- MENU LINKS -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a [routerLink]="['/']" class="smoothScroll">Home</a></li>
+                <li class="active"><a [routerLink]="['/about']" class="smoothScroll">About</a></li>
+                <li><a [routerLink]="['/services']" class="smoothScroll">Services</a></li>
+                <!-- <li><a [routerLink]="['/shop']" class="smoothScroll">Shop</a></li> -->
+                <li><a [routerLink]="['/contact-us']" class="smoothScroll">Contact Us</a></li>
+                <li><a [routerLink]="['/help']" class="smoothScroll">help</a></li>
+                <!-- <li><a [routerLink]="['/login']" class="smoothScroll">Sign IN</a></li>
+                <li><a [routerLink]="['/register']" class="smoothScroll">Sign Up</a></li> -->
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+
+<section class="video-step">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-12 col-sm-12 col-md-12 text-center">
+                <div class="page-title">
+                    <h1>About Us</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cms-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Saba’s current focus is to build Advanced UI applications using Angular, React, Vue and a suite of UI technologies
+                    Our UI specialists can help build custom applications for your organization,
+                    below are few examples that are high profile and high-quality applications built with Angular..
+                </h3>
+            </div>
+        </div>
+        <div class="row team-info">
+            <div class="col-md-3">
+                <img src="../../assets/images/team/Adarsh.jpg" alt="adarshk" style="width:100%">
+                <h3><b>Adarsh Krishnamurthy</b></h3>
+                <p class="w3-opacity">(CEO & Co-Founder)</p>
+                <p>A Passionate Individual and Development Lead</p>
+                <!--<p>
+                    <button class="mat-raised-button btn-lg">Contact</button>
+                </p>-->
+            </div>
+            <div class="col-md-3">
+                <img src="../../assets/images/team/bharath.jpg" alt="bharathv" style="width:100%">
+                <h3><b>Bharath Vyas</b></h3>
+                <p class="w3-opacity">(CFO and Co-Founder)</p>
+                <p>Dedicated in going beyond Customer Expectations</p>
+                <!--<p>
+                    <button class="mat-raised-button btn-lg">Contact</button>
+                </p>-->
+            </div>
+            <div class="col-md-3">
+                <img src="../../assets/images/team/Achar.jpg" alt="adarsha" style="width:100%">
+                <h3><b>Adarsh Achar</b></h3>
+                <p class="w3-opacity">(CTO and Co-Founder)</p>
+                <p>A Technocrat who is the key in implementing every latest Technology</p>
+                <!--<p>
+                    <button class="mat-raised-button btn-lg">Contact</button>
+                </p>-->
+            </div>
+            <div class="col-md-3">
+                <img src="../../assets/images/team/sachin.jpg" alt="sachinj" style="width:100%">
+                <h3><b>Sachin Jambur</b></h3>
+                <p class="w3-opacity">(Chief Architect and Co-Founder)</p>
+                <p>An Architect of all architects</p>
+                <!--<p>
+                    <button class="mat-raised-button btn-lg">Contact</button>
+                </p>-->
+            </div>
+        </div>
+    </div>
+</section>
